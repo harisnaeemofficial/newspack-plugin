@@ -40,7 +40,7 @@ class Plugin_Manager {
 	 */
 	public static function get_managed_plugins() {
 		$managed_plugins = [
-			'newspack-blocks'               => [
+			'newspack-blocks'                       => [
 				'Name'        => esc_html__( 'Newspack Blocks', 'newspack' ),
 				'Description' => esc_html__( 'A collection of blocks for news publishers.' ),
 				'Author'      => 'Automattic',
@@ -48,7 +48,7 @@ class Plugin_Manager {
 				'AuthorURI'   => 'https://automattic.com',
 				'Download'    => 'https://github.com/Automattic/newspack-blocks/releases/latest/download/newspack-blocks.zip',
 			],
-			'newspack-ads'                  => [
+			'newspack-ads'                          => [
 				'Name'        => esc_html__( 'Newspack Ads', 'newspack' ),
 				'Description' => esc_html__( 'Ads integration.' ),
 				'Author'      => 'Automattic',
@@ -56,7 +56,7 @@ class Plugin_Manager {
 				'AuthorURI'   => 'https://automattic.com',
 				'Download'    => 'https://github.com/Automattic/newspack-ads/releases/latest/download/newspack-ads.zip',
 			],
-			'newspack-content-converter'    => [
+			'newspack-content-converter'            => [
 				'Name'        => esc_html__( 'Newspack Content Converter', 'newspack' ),
 				'Description' => esc_html__( 'Batch conversion of Classic->Gutenberg post conversion.' ),
 				'Author'      => 'Automattic',
@@ -65,7 +65,7 @@ class Plugin_Manager {
 				'Download'    => 'https://github.com/Automattic/newspack-content-converter/releases/latest/download/newspack-content-converter.zip',
 				'Quiet'       => true,
 			],
-			'jetpack'                       => [
+			'jetpack'                               => [
 				'Name'        => __( 'Jetpack', 'newspack' ),
 				'Description' => esc_html__( 'Bring the power of the WordPress.com cloud to your self-hosted WordPress. Jetpack enables you to connect your blog to a WordPress.com account to use the powerful features normally only available to WordPress.com users.', 'newspack' ),
 				'Author'      => 'Automattic',
@@ -74,7 +74,7 @@ class Plugin_Manager {
 				'Download'    => 'wporg',
 				'EditPath'    => 'admin.php?page=jetpack',
 			],
-			'amp'                           => [
+			'amp'                                   => [
 				'Name'        => __( 'AMP', 'newspack' ),
 				'Description' => esc_html__( 'Enable AMP on your WordPress site, the WordPress way.', 'newspack' ),
 				'Author'      => 'WordPress.com VIP, XWP, Google, and contributors',
@@ -83,7 +83,7 @@ class Plugin_Manager {
 				'Download'    => 'wporg',
 				'EditPath'    => 'admin.php?page=amp-options',
 			],
-			'woocommerce-gateway-stripe'    => [
+			'woocommerce-gateway-stripe'            => [
 				'Name'        => __( 'WooCommerce Stripe Gateway', 'newspack' ),
 				'Description' => esc_html__( 'Take credit card payments on your store using Stripe.', 'newspack' ),
 				'Author'      => 'WooCommerce',
@@ -92,7 +92,7 @@ class Plugin_Manager {
 				'Download'    => 'wporg',
 				'EditPath'    => 'admin.php?page=wc-settings&tab=checkout&section=stripe',
 			],
-			'woocommerce'                   => [
+			'woocommerce'                           => [
 				'Name'        => __( 'WooCommerce', 'newspack' ),
 				'Description' => esc_html__( 'An eCommerce toolkit that helps you sell anything. Beautifully.', 'newspack' ),
 				'Author'      => 'WordPress.com VIP, XWP, Google, and contributors',
@@ -101,7 +101,7 @@ class Plugin_Manager {
 				'Download'    => 'wporg',
 				'EditPath'    => 'admin.php?page=wc-settings',
 			],
-			'woocommerce-subscriptions'     => [
+			'woocommerce-subscriptions'             => [
 				'Name'        => __( 'WooCommerce Subscriptions', 'newspack' ),
 				'Description' => esc_html__( 'An eCommerce toolkit that helps you sell anything. Beautifully.', 'newspack' ),
 				'Author'      => 'Prospress Inc.',
@@ -109,21 +109,21 @@ class Plugin_Manager {
 				'AuthorURI'   => 'https://prospress.com',
 
 			],
-			'woocommerce-name-your-price'   => [
+			'woocommerce-name-your-price'           => [
 				'Name'        => __( 'WooCommerce Name Your Price', 'newspack' ),
 				'Description' => esc_html__( 'WooCommerce Name Your Price allows customers to set their own price for products or donations.', 'newspack' ),
 				'Author'      => 'Kathy Darling',
 				'PluginURI'   => 'http://www.woocommerce.com/products/name-your-price/',
 				'AuthorURI'   => 'http://kathyisawesome.com',
 			],
-			'woocommerce-one-page-checkout' => [
+			'woocommerce-one-page-checkout'         => [
 				'Name'        => __( 'WooCommerce One Page Checkout', 'newspack' ),
 				'Description' => esc_html__( 'Super fast sales with WooCommerce. Add to cart, checkout & pay all on the one page!', 'newspack' ),
 				'Author'      => 'Prospress Inc.',
 				'PluginURI'   => 'https://woocommerce.com/products/woocommerce-one-page-checkout/',
 				'AuthorURI'   => 'http://prospress.com/',
 			],
-			'mailchimp-for-woocommerce'     => [
+			'mailchimp-for-woocommerce'             => [
 				'Name'        => 'Mailchimp for WooCommerce',
 				'Description' => esc_html__( 'Connects WooCommerce to Mailchimp to sync your store data, send targeted campaigns to your customers, and sell more stuff.', 'newspack' ),
 				'Author'      => 'Mailchimp',
@@ -131,7 +131,7 @@ class Plugin_Manager {
 				'PluginURI'   => 'https://mailchimp.com/connect-your-store/',
 				'Download'    => 'wporg',
 			],
-			'wordpress-seo'                 => [
+			'wordpress-seo'                         => [
 				'Name'        => 'Yoast SEO',
 				'Description' => 'The first true all-in-one SEO solution for WordPress, including on-page content analysis, XML sitemaps and much more.',
 				'Author'      => 'Team Yoast',
@@ -139,7 +139,7 @@ class Plugin_Manager {
 				'Download'    => 'wporg',
 				'EditPath'    => 'admin.php?page=wpseo_dashboard',
 			],
-			'google-site-kit'               => [
+			'google-site-kit'                       => [
 				'Name'        => 'Google Site Kit',
 				'Description' => 'Site Kit is is a one-stop solution for WordPress users to use everything Google has to offer to make them successful on the web.',
 				'Author'      => 'Google',
@@ -152,13 +152,13 @@ class Plugin_Manager {
 					'class_name' => 'Site_Kit_Configuration_Manager',
 				],
 			],
-			'gutenberg'                     => [
+			'gutenberg'                             => [
 				'Name'        => 'Gutenberg',
 				'Description' => 'Printing since 1440. This is the development plugin for the new block editor in core.',
 				'Author'      => 'Gutenberg Team',
 				'Download'    => 'wporg',
 			],
-			'pwa'                           => [
+			'pwa'                                   => [
 				'Name'        => 'PWA',
 				'Description' => 'Feature plugin to bring Progressive Web App (PWA) capabilities to Core',
 				'Author'      => 'PWA Plugin Contributors',
@@ -166,7 +166,7 @@ class Plugin_Manager {
 				'PluginURI'   => 'https://github.com/xwp/pwa-wp',
 				'Download'    => 'wporg',
 			],
-			'wp-user-avatar'                => [
+			'wp-user-avatar'                        => [
 				'Name'        => 'WP User Avatar',
 				'Description' => 'Use any image from your WordPress Media Library as a custom user avatar. Add your own Default Avatar.',
 				'Author'      => 'flippercode',
@@ -174,7 +174,7 @@ class Plugin_Manager {
 				'PluginURI'   => 'https://wordpress.org/plugins/wp-user-avatar/',
 				'Download'    => 'wporg',
 			],
-			'super-cool-ad-inserter'        => [
+			'super-cool-ad-inserter'                => [
 				'Name'        => __( 'Super Cool Ad Inserter Plugin', 'newspack' ),
 				'Description' => __( 'This WordPress plugin gives site administrators a way to insert widgets such as ads, newsletter signups, or calls to action into posts at set intervals.', 'newspack' ),
 				'Author'      => 'INN Labs',
@@ -182,18 +182,18 @@ class Plugin_Manager {
 				'PluginURI'   => 'https://wordpress.org/plugins/super-cool-ad-inserter/',
 				'Download'    => 'wporg',
 			],
-			'fake-plugin'                   => [
+			'fake-plugin'                           => [
 				'Name'        => 'Fake Plugin',
 				'Description' => 'This is a made-up plugin, meant to error out.',
 				'Author'      => 'Newspack',
 				'Download'    => 'wporg',
 			],
-			'newspack-theme'                => [
+			'newspack-theme'                        => [
 				'Name'        => 'Newspack Theme',
 				'Description' => 'The Newspack theme.',
 				'Author'      => 'Newspack',
 			],
-			'publish-to-apple-news'         => [
+			'publish-to-apple-news'                 => [
 				'Name'        => 'Publish to Apple News',
 				'Description' => 'Export and sync posts to Apple format.',
 				'Author'      => 'Alley Interactive',
@@ -206,7 +206,7 @@ class Plugin_Manager {
 					'class_name' => 'Publish_To_Apple_News_Configuration_Manager',
 				],
 			],
-			'fb-instant-articles'           => [
+			'fb-instant-articles'                   => [
 				'Name'        => 'Instant Articles for WP',
 				'Description' => 'Add support for Instant Articles for Facebook to your WordPress site.',
 				'Author'      => 'Automattic, Dekode, Facebook',
@@ -215,7 +215,7 @@ class Plugin_Manager {
 				'Download'    => 'wporg',
 				'EditPath'    => 'admin.php?page=instant-articles-wizard',
 			],
-			'constant-contact-forms'        => [
+			'constant-contact-forms'                => [
 				'Name'        => 'Constant Contact Forms',
 				'Description' => 'Be a better marketer. All it takes is Constant Contact email marketing.',
 				'Author'      => 'Constant Contact',
@@ -223,7 +223,7 @@ class Plugin_Manager {
 				'PluginURI'   => 'https://www.constantcontact.com',
 				'Download'    => 'wporg',
 			],
-			'disqus-comment-system'         => [
+			'disqus-comment-system'                 => [
 				'Name'        => 'Disqus for WordPress',
 				'Description' => 'Disqus helps publishers increase engagement and build loyal audiences.',
 				'Author'      => 'Disqus',
@@ -232,7 +232,7 @@ class Plugin_Manager {
 				'Download'    => 'wporg',
 				'EditPath'    => 'admin.php?page=disqus#install',
 			],
-			'newspack-disqus-amp'           => [
+			'newspack-disqus-amp'                   => [
 				'Name'        => 'Newspack Disqus AMP',
 				'Description' => 'Adds AMP-compatibility to the Disqus plugin.',
 				'Author'      => 'Automattic',
@@ -240,7 +240,7 @@ class Plugin_Manager {
 				'AuthorURI'   => 'https://automattic.com',
 				'Download'    => 'https://github.com/Automattic/newspack-disqus-amp/releases/latest/download/newspack-disqus-amp.zip',
 			],
-			'talk-wp-plugin'                => [
+			'talk-wp-plugin'                        => [
 				'Name'        => 'Coral Project',
 				'Description' => 'A plugin to replace stock WP commenting with Coral Project comments.',
 				'Author'      => 'Alley Interactive, The Coral Project',
@@ -249,12 +249,12 @@ class Plugin_Manager {
 				'Download'    => 'https://github.com/coralproject/talk-wp-plugin/archive/v0.2.0.zip',
 				'EditPath'    => 'options-general.php?page=talk-settings',
 			],
-			'wordpress-settings-discussion' => [
+			'wordpress-settings-discussion'         => [
 				'Name'     => 'Wordpress Commenting',
 				'WPCore'   => true,
 				'EditPath' => 'options-discussion.php',
 			],
-			'co-authors-plus'               => [
+			'co-authors-plus'                       => [
 				'Name'        => 'Co-Authors Plus',
 				'Description' => 'Allows multiple authors and guest authors to be assigned to a post.',
 				'Author'      => 'Mohammad Jangda, Daniel Bachhuber, Automattic, Weston Ruter',
@@ -262,7 +262,7 @@ class Plugin_Manager {
 				'PluginURI'   => 'http://wordpress.org/extend/plugins/co-authors-plus/',
 				'Download'    => 'wporg',
 			],
-			'newspack-image-credits'        => [
+			'newspack-image-credits'                => [
 				'Name'        => 'Newspack Image Credits',
 				'Description' => 'Add photo credit info to images.',
 				'Author'      => 'Automattic, INN Labs, Project Argo',
@@ -270,7 +270,7 @@ class Plugin_Manager {
 				'AuthorURI'   => 'https://automattic.com',
 				'Download'    => 'https://github.com/Automattic/newspack-image-credits/releases/latest/download/newspack-image-credits.zip',
 			],
-			'newspack-popups'               => [
+			'newspack-popups'                       => [
 				'Name'        => 'Newspack Popups',
 				'Description' => 'AMP-compatible popup notifications.',
 				'Author'      => 'Automattic',
@@ -278,7 +278,7 @@ class Plugin_Manager {
 				'AuthorURI'   => 'https://automattic.com',
 				'Download'    => 'https://github.com/Automattic/newspack-popups/releases/latest/download/newspack-popups.zip',
 			],
-			'newspack-media-partners'       => [
+			'newspack-media-partners'               => [
 				'Name'        => 'Newspack Media Partners',
 				'Description' => 'Add media partners and their logos to posts. Intended for posts published in conjunction with other outlets.',
 				'Author'      => 'Automattic',
@@ -286,7 +286,7 @@ class Plugin_Manager {
 				'AuthorURI'   => 'https://automattic.com',
 				'Download'    => 'https://github.com/Automattic/newspack-media-partners/releases/latest/download/newspack-media-partners.zip',
 			],
-			'laterpay'                      => [
+			'laterpay'                              => [
 				'Name'        => 'LaterPay',
 				'Description' => 'A frictionless monetization solution to convert your readers into paying customers.',
 				'Author'      => 'LaterPay',
@@ -299,7 +299,7 @@ class Plugin_Manager {
 					'class_name' => 'LaterPay_Configuration_Manager',
 				],
 			],
-			'newspack-supporters'           => [
+			'newspack-supporters'                   => [
 				'Name'        => 'Newspack Supporters',
 				'Description' => 'Manage and display your site\'s supporters.',
 				'Author'      => 'Automattic',
@@ -307,7 +307,7 @@ class Plugin_Manager {
 				'AuthorURI'   => 'https://automattic.com',
 				'Download'    => 'https://github.com/Automattic/newspack-supporters/releases/latest/download/newspack-supporters.zip',
 			],
-			'organic-profile-block'         => [
+			'organic-profile-block'                 => [
 				'Name'        => 'Organic Profile Block',
 				'Description' => "The Profile Block is created for the Gutenberg content editor. It displays a profile section with an image, name, subtitle, bio and personal social media links. It's perfect for author biographies, personal profiles, or staff pages.",
 				'Author'      => 'Organic Themes',
@@ -315,7 +315,7 @@ class Plugin_Manager {
 				'AuthorURI'   => 'https://organicthemes.com/',
 				'Download'    => 'wporg',
 			],
-			'password-protected'            => [
+			'password-protected'                    => [
 				'Name'        => 'Password Protected',
 				'Description' => 'A very simple way to quickly password protect your WordPress site with a single password. Please note: This plugin does not restrict access to uploaded files and images and does not work with some caching setups.',
 				'Author'      => 'Ben Huson',
@@ -324,12 +324,20 @@ class Plugin_Manager {
 				'Download'    => 'wporg',
 				'EditPath'    => 'options-general.php?page=password-protected',
 			],
-			'mailchimp-for-wp'              => [
+			'mailchimp-for-wp'                      => [
 				'Name'        => 'MC4WP: Mailchimp for WordPress',
 				'Description' => 'Mailchimp for WordPress by ibericode. Adds various highly effective sign-up methods to your site.',
 				'Author'      => 'ibericode',
 				'PluginURI'   => 'https://mc4wp.com',
 				'AuthorURI'   => 'https://ibericode.com',
+				'Download'    => 'wporg',
+			],
+			'onesignal-free-web-push-notifications' => [
+				'Name'        => 'OneSignal Push Notifications',
+				'Description' => 'Free web push notifications.',
+				'Author'      => 'OneSignal',
+				'PluginURI'   => 'https://onesignal.com/',
+				'AuthorURI'   => 'https://onesignal.com/',
 				'Download'    => 'wporg',
 			],
 		];
