@@ -185,17 +185,13 @@ class EngagementWizard extends Component {
 				exact: true,
 			},
 			{
-				label: __( 'Push' ),
+				label: __( 'Notifications' ),
 				path: '/push-notifications',
 				exact: true,
 			},
 			{
 				label: __( 'Commenting' ),
 				path: '/commenting/',
-			},
-			{
-				label: __( 'UGC' ),
-				path: '/user-generated-content',
 			},
 		];
 		const commentingSecondaryNavigation = [
@@ -215,7 +211,7 @@ class EngagementWizard extends Component {
 				exact: true,
 			},
 		];
-		const subheader = __( 'Newsletters, social, commenting, UGC' );
+		const subheader = __( 'Newsletters, social, pop-ups, push notifications, commenting' );
 		return (
 			<Fragment>
 				<HashRouter hashType="slash">
